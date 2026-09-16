@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,interactive-widget=resizes-content">
+  <meta name="description" content="Chat with Jenga Mini AI, a small, genuinely self-hosted language model.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Mini AI | jenga-code</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/markdown.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#composer">Skip to message box</a>
+<header class="site-header"><div class="header-inner">
+  <a href="https://jenga-code.com/" class="site-logo" aria-label="jenga-code home"><span class="logo-fallback">jenga<span>-code</span></span></a>
+  <button id="menuButton" class="menu-button" aria-expanded="false" aria-controls="mainNav" type="button">Menu ☰</button>
+  <nav id="mainNav" class="main-nav" aria-label="Main navigation"><a href="https://jenga-code.com/">Home</a><a href="https://jenga-code.com/projects/" class="active">Projects</a><a href="https://jenga-code.com/subjects/">Subjects</a><a href="https://jenga-code.com/tutorials/">Tutorials</a><a href="https://jenga-code.com/blog/">Blog</a><a href="https://jenga-code.com/about/">About</a><a href="https://jenga-code.com/contact/">Contact</a></nav>
+  <div class="header-actions"><a class="social-link" href="https://github.com/GeorgeMillerGraduate" aria-label="GitHub">GH</a><a class="subscribe-button" href="https://jenga-code.com/blog/">Read the blog</a></div>
+</div></header>
+<main id="main">
+  <div class="page-heading"><div><p class="eyebrow"><a href="https://jenga-code.com/projects/">THE PLAYGROUND</a> / ARTIFICIAL INTELLIGENCE</p><h1>Mini AI<span>.</span></h1></div><p>Your questions. A little local intelligence.</p></div>
+  <section class="studio" aria-label="AI chat workspace">
+    <aside class="sidebar" aria-label="Conversations">
+      <button id="newChat" class="primary" type="button">+ New chat</button>
+      <details id="historyPanel" open><summary>YOUR CHATS <span>On this device</span></summary><div id="chatList"></div></details>
+      <div class="model-note"><span class="model-mark" aria-hidden="true">J</span><strong>Small model. Real AI.</strong><p>Runs on a small self-hosted model.<br>No paid AI service behind the scenes.</p><p>Your chats are saved in this browser. Messages are sent to the configured AI server.</p><button id="clearAll" class="text-button" type="button">Delete saved chats</button></div>
+    </aside>
+    <div class="chat-panel">
+      <div class="chat-toolbar"><div><strong>Jenga Mini AI</strong><span id="modelLabel">Qwen3-0.6B · Q4_K_M</span></div><button id="connection" class="connection" type="button" title="Check server connection">Checking connection…</button></div>
+      <div id="transcript" class="transcript" tabindex="0" aria-label="Conversation">
+        <div id="welcome" class="welcome"><div class="welcome-mark" aria-hidden="true">j<span>.</span></div><p class="eyebrow">A SMALL SPACE FOR BIG QUESTIONS</p><h2>What are you curious about?</h2><p>Explain an idea, draft something, or work through a little code.</p><div class="suggestions"><button type="button" data-prompt="Explain binary search with a simple example."><span>Understand something</span>Explain binary search ↗</button><button type="button" data-prompt="Write a short JavaScript function that checks whether a number is prime."><span>Try a little code</span>Write a prime checker ↗</button><button type="button" data-prompt="Give me three small programming project ideas for a weekend."><span>Find a starting point</span>Brainstorm a project ↗</button></div></div>
+        <div id="messages"></div>
+      </div>
+      <div class="composer-area">
+        <div id="notice" class="notice" role="status" hidden></div>
+        <div class="conversation-actions"><span id="generationStatus" role="status" aria-live="polite">Ready for your question</span><button id="retry" type="button" hidden>Retry response</button><button id="clearChat" class="text-button" type="button">Clear chat</button></div>
+        <form id="chatForm"><label for="composer" class="sr-only">Message Jenga Mini AI</label><textarea id="composer" rows="2" maxlength="8000" placeholder="Message Mini AI…" required></textarea><div class="composer-bottom"><span>Enter to send · Shift + Enter for a new line</span><button id="stop" type="button" hidden>■ Stop</button><button id="send" class="primary" type="submit">Send ↑</button></div></form>
+        <p class="disclaimer">A small model can make big mistakes. Check important answers.</p>
+      </div>
+    </div>
+  </section>
+  <footer><a class="brand" href="https://jenga-code.com/">jenga<span>-code</span></a><span>Made to explore.</span><a href="https://jenga-code.com/projects/">Back to the playground ↗</a></footer>
+</main>
+</body>
+</html>

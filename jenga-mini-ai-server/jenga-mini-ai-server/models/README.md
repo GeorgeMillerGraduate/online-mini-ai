@@ -1,0 +1,1 @@
+The installer downloads the pinned Qwen GGUF here and verifies its SHA-256. Model weights are intentionally omitted from the ZIP. See config/downloads.json and the setup guide for exact provenance and licence.

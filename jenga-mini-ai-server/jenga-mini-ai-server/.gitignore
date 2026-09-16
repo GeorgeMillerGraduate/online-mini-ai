@@ -1,0 +1,8 @@
+.env
+runtime/
+llama.cpp/
+models/*.gguf
+node_modules/
+*.log
+*.part
+runtime-download.*

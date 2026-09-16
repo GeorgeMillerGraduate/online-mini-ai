@@ -1,0 +1,5 @@
+{
+  "name": "jenga-mini-ai-server", "version": "1.0.0", "private": true,
+  "type": "module", "engines": {"node": ">=22"},
+  "scripts": {"start": "node scripts/start.mjs", "api": "node server/api.mjs", "install:runtime": "node scripts/install.mjs", "test": "node --test tests/*.test.mjs"}
+}

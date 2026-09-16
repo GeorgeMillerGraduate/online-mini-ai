@@ -1,0 +1,13 @@
+# Replace with YOUR domain pointing to the CPU server.
+ai-api.jenga-code.com {
+    @api path /api/chat /api/health
+    handle @api {
+        reverse_proxy 127.0.0.1:3001 {
+            header_up X-Real-IP {remote_host}
+            flush_interval -1
+        }
+    }
+    handle {
+        respond "Not found" 404
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "llamaTag": "b11009",
+  "runtime": {
+    "linux": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11009/llama-b11009-bin-ubuntu-x64.tar.gz",
+      "sha256": "3de11a5f31aa8886d981e14ed02ea7111ff261ecbb16502b4b4562eddc587efb"
+    },
+    "win32": {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11009/llama-b11009-bin-win-cpu-x64.zip",
+      "sha256": "39973a6c78303dd3cf0ab202a0ec24976579b80704320733e43b086b70af558d"
+    }
+  },
+  "model": {
+    "name": "Qwen_Qwen3-0.6B-Q4_K_M.gguf",
+    "revision": "60b85c0e3d8fe0f6474f406922a26d12aca4550d",
+    "url": "https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF/resolve/60b85c0e3d8fe0f6474f406922a26d12aca4550d/Qwen_Qwen3-0.6B-Q4_K_M.gguf",
+    "sha256": "9acfc1e001311f34b4252001b626f2e466d592a42065f66571bff3790d4e1b14",
+    "bytes": 484220320
+  }
+}
